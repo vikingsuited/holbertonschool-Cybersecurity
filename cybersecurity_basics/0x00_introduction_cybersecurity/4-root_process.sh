@@ -1,2 +1,2 @@
 #!/bin/bash
-ps aux | awk -v user="$1" 'NR==1 || ($1 == user && $5 != 0 && $6 != 0)'
+ps aux | grep -E "USER|^$1 " | grep -v "0      0"
