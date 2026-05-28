@@ -1,2 +1,2 @@
 #!/bin/bash
-ip addr show tun0 2>/dev/null | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | tr -d '\n'
+line="$(ip addr show tun0 2>/dev/null | grep -w inet)"; arr=($line); printf "%s" "${arr[1]%%/*}"
