@@ -1,2 +1,3 @@
 #!/bin/bash
-read -r _ _ gw _ <<< "$(ip route show default 2>/dev/null)"; printf "%s" "$gw"
+ip route show default 2>/dev/null | cut -d" " -f3 | tr -d "
+"
