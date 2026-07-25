@@ -16,8 +16,8 @@ This module focuses on identifying and exploiting insecure file upload vulnerabi
 ## Setup
 Add to `/etc/hosts`:
 
-10.42.42.195 web0x05.hbtn
-10.42.42.195 test-s3.web0x05.hbtn
+ip web0x05.hbtn
+ip test-s3.web0x05.hbtn
 
 
 ## Key Concepts
